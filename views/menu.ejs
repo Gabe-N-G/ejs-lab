@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+</head>
+<body>
+  <h1>Full Menu</h1>
+<% menu.forEach(food => { %>
+    <h2><%=food.name%></h2>
+    <p>$<%=food.price%></p>
+    <p><%=food.rating%>/5</p>
+    <p><%=food.details%></p>
+<% }); %>
+
+  <!-- <h1><%= menu[0].name  %></h1> -->
+</body>
+</html>

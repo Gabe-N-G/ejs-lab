@@ -59,6 +59,12 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/menu', (req, res) => {
+    res.render('menu.ejs',{
+      menu: RESTAURANT.menu
+    });
+  });
+
 app.listen(3000, () => {
   console.log('Listening on port 3000');
 });
