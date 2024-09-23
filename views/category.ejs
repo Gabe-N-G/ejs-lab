@@ -6,10 +6,9 @@
   <title>Menu</title>
 </head>
 <body>
+    <%- include('./partials/nav') %>
+    <h1><%= menuItems[0].category[0].toUpperCase() + menuItems[0].category.slice(1)  %></h1>
  <% menuItems.forEach(food => { %>
-  <h1><%= food.category %></h1>
-  <%- include('./partials/nav') %>
-
     <h2><%=food.name%></h2>
     <p>$<%=food.price%></p>
     <p><%=food.rating%>/5</p>
