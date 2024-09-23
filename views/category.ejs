@@ -9,7 +9,7 @@
     <%- include('./partials/nav') %>
     <h1><%= menuItems[0].category[0].toUpperCase() + menuItems[0].category.slice(1)  %></h1>
  <% menuItems.forEach(food => { %>
-    <h2><%=food.name%></h2>
+    <h2><%=food.name%><%= food.rating === 5 ? "⭐️" : "" %></h2>
     <p>$<%=food.price%></p>
     <p><%=food.rating%>/5</p>
     <p><%=food.details%></p>
