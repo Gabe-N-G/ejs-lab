@@ -66,7 +66,7 @@ app.get('/menu', (req, res) => {
   });
 
   app.get('/menu/:category', (req, res) => {
-    console.log("I'm here!")
+    // console.log("I'm here!")
     res.render('category.ejs',{
       menuItems: RESTAURANT.menu.filter(food => food.category === req.params.category)
     });

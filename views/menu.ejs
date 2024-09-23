@@ -6,8 +6,8 @@
   <title>Menu</title>
 </head>
 <body>
+    <%- include('./partials/nav') %>
   <h1>Full Menu</h1>
-  <%- include('./partials/nav') %>
 <% menu.forEach(food => { %>
     <h2><%=food.name%></h2>
     <p>$<%=food.price%></p>
